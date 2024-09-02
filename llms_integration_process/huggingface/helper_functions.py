@@ -4,7 +4,7 @@ from transformers import pipeline
 # Set up the model and tokenizer with specific parameters to avoid warnings
 generator = pipeline(
     "text-generation",
-    model="Meta-Llama-3.1-70B-Instruct",
+    model="gpt2",
     clean_up_tokenization_spaces=True,  # Explicitly set to avoid future warning
     pad_token_id=50256  # Explicitly set pad_token_id to eos_token_id
 )
